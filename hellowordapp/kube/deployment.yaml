@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: helloworldapp
-        image: helloworldapp:latest
+        image: matheusrfa/expressjs-hello-word-service:latest
         ports:
         - containerPort: 3000
