@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-deployment
+  name: helloworldapp
   labels:
-    app: nodejs
+    app: helloworldapp
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: nodejs
+      app: helloworldapp
   template:
     metadata:
       labels:
-        app: nodejs
+        app: helloworldapp
     spec:
       containers:
-      - name: nodejs
-        image: my-express-app:latest
+      - name: helloworldapp
+        image: helloworldapp:latest
         ports:
         - containerPort: 3000
